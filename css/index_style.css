@@ -1,0 +1,390 @@
+header{
+    background-image: url("../images/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 42px;
+    min-width: 616px;
+}
+nav{
+    background-color:#2d383a;
+    width: 325px;
+    margin: auto;
+    
+}
+li a{
+    text-decoration: none;
+    color: cornsilk;
+    
+}
+li.current{
+    border: 3px solid #EBEB00;
+    border-radius: 10px;
+    padding: 8px;
+}
+li.current a{
+    text-decoration: underline;
+    text-decoration-color: #EBEB00;
+}
+li.link{
+    border: 3px solid #004466;
+    border-radius: 10px;
+    padding: 8px;
+}
+ul.links{
+    text-align: center;
+    border-style: outset;
+    border-width: 8px;
+    border-color: #004466;
+}
+.skip a{
+    position: absolute;
+    bottom: 1400px;
+    overflow:hidden;
+    font-size: 32px;
+}
+.skip a:focus, .skip a:active{
+    position: relative;
+    top: 0;
+    overflow: visible;
+    /* Got help on this part from this website: https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/ */
+}
+
+
+main{
+    text-align: center;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 150px;
+    align-content: space-around;
+    justify-content: center;
+    margin: 15px;
+    
+}
+.one, .two, .three, .four{
+    background-color: #004466;
+    border-style: outset;
+    border-width: 8px;
+    border-color: #EBEB00;
+    margin-bottom: 15px;
+}
+
+h1, .contactTitle{
+    font-family: 'Titillium Web', regular, sans-serif;
+    padding-top: 40px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    color: #EBEB00;
+    padding-bottom: 15px;
+
+}
+p{
+    font-family: 'Open Sans', light, sans-serif;
+    font-size: 18px;
+    padding-bottom: 40px;
+    color: #DEDEDE;
+}
+.about{
+    padding-top: 80px;
+}
+ul.goals{
+    font-family: 'Open Sans', light, sans-serif;
+    font-size: 18px;
+    padding-bottom: 40px;
+    color: #DEDEDE;
+    list-style-type: none;
+}
+#gallery{
+    color: black;
+}
+.row1 img{
+    transition: 1s ease;
+}
+.row1 img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1.5s ease;
+}
+.row2 img:hover {
+    border-radius:50%;
+    transition: 1s ease;
+}
+.row3 img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    }
+    
+    .row3 img:hover{
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+    }
+    /* https://thebrandsmen.com/css-image-hover-effects/ Was used and modified */
+img{
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    border-style: outset;
+    border-width: 8px;
+    border-color: black;
+}
+.yam, .goal_pic, .michy_pic, .pic{
+    display: none;
+}
+#diag, #basketball{
+    transform: rotate(90deg);
+}
+form{
+    width: 600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #DEDEDE;
+    padding-bottom: 15px;
+    border-style: outset;
+    border-width: 8px;
+    border-color: #EBEB00;
+    background-color: #004466;
+    list-style-type: none;
+    
+}
+input{
+    width: 400px;
+    height: 50px;
+}
+.contactTitle{
+    text-align: center;
+}
+.contact{
+    color: #DEDEDE;
+    font-family: 'Open Sans', light, sans-serif;
+    font-size: 24px;
+}
+label{
+    margin-bottom: 15px;
+    display: flex;
+}
+.submit{
+    margin-top: 15px;
+    display: list-item;
+    text-align: unset;
+}
+
+
+footer{
+    background-image: url("../images/wood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'Open Sans', light, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    min-width: 616px;
+    
+    
+}
+footer img{
+    border: 0;
+    max-width: 150px;
+    max-height: 150px;
+    
+}
+.connect{
+    grid-row-start: span 1;
+    grid-column-start: span 1;
+    left: 0;
+    bottom: auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       2px 2px 0 #000;
+       /*Code gotten from: https://css-tricks.com/adding-stroke-to-web-text/ with modification*/
+}
+.contact p{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-shadow:
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       2px 2px 0 #000;
+}
+.phone{
+    grid-row: 3/ span 1;
+    grid-column: 1/ span 4;
+}
+.email{
+    grid-row: 4/ span 1;
+    grid-column: 1/ span 4;
+}
+.top{
+    grid-row: 2/ span 2;
+    grid-column: 2/ span 2;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Titillium Web', regular, sans-serif;
+    text-shadow: 
+    0 1px 0 #ccc, 
+    0 2px 0 #c9c9c9, 
+    0 3px 0 #bbb, 
+    0 4px 0 #b9b9b9, 
+    0 5px 0 #aaa, 
+    0 6px 1px rgba(0,0,0,.1), 
+    0 0 5px rgba(0,0,0,.1), 
+    0 1px 3px rgba(0,0,0,.3), 
+    0 3px 5px rgba(0,0,0,.2), 
+    0 5px 10px rgba(0,0,0,.25), 
+    0 10px 10px rgba(0,0,0,.2), 
+    0 20px 20px rgba(0,0,0,.15);
+    /*Code gotten from: https://cssnewbie.com/10-beautiful-css-text-effects/#.XlGrfShKiUn with modification */
+    padding-bottom: 20px;
+}
+
+@media all and (min-width:1024px){
+    ul.links{
+        display: flex;
+        flex-direction: row;
+    }
+    nav{
+        width: 925px;
+    }
+    header{
+        font-size: 45px;
+        height: 150px;
+    }
+    .text{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .one, .two, .three, .four{
+        flex-direction: row;
+        flex: 1 0 20%;
+    }
+    h1, .contactTitle{
+        font-size: 35px;
+    }
+    p{
+        font-size: 20px;
+    }
+    ul.goals{
+        font-size: 20px;
+    }
+    img{
+        width: 525px;
+        height: 525px;
+    }
+    form{
+        width: 925px;
+    }
+    input{
+        width: 500px;
+    }
+    .connect{
+        font-size: 28px;
+    }
+    .contact p{
+        font-size: 28px;
+    }
+        /*Start the Card Flip, Source: https://learn.shayhowe.com/advanced-html-css/transitions-animations/  */
+    
+    .four, .two, .one, .three{
+        transform-style: preserve-3d;
+        transition: all 2s ease-in-out;
+        backface-visibility: hidden;
+    }
+    .one:hover{
+        transform: rotateY(180deg);
+    }
+    .two:hover{
+        transform: rotateY(180deg);
+    }
+    .three:hover{
+        transform: rotateY(180deg);
+    }
+    .four:hover{
+        transform: rotateY(180deg);
+    }
+    .yam, .front4, .goal_pic, .goals, .front1, .michy_pic, .front3, .pic{
+        backface-visibility: hidden;
+        position: relative;
+    }
+    .yam, .goal_pic, .michy_pic, .pic {
+        transform: rotateY(180deg);
+        display: inline-block;
+        vertical-align: text-bottom;
+    }
+    .yam img, .goal_pic img, .michy_pic img, .pic img{
+        width: 250px;
+        height: 350px;
+    }
+    /* end card flip */
+}
+
+@media all and (min-width:1450px){
+    ul.links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav{
+        width: 1325px;
+    }
+    header{
+        font-size: 50px;
+        height: 200px;
+    }
+    .one, .two, .three, .four{
+        flex: 1 0 23%;
+    }
+    h1, .contactTitle{
+        font-size: 42px;
+    }
+    p{
+        font-size: 24px;
+    }
+    ul.goals{
+        font-size: 24px;
+    }
+    img{
+        width: 500px;
+        height: 500px;
+    }
+    form{
+        width: 1125px;
+    }
+    input{
+        width: 600px;
+    }
+    footer img{
+        height: 300px;
+        width: 300px;
+    }
+    .connect{
+        font-size: 33px;
+    }
+    .contact p{
+        font-size: 33px;
+    }   
+
+}
