@@ -60,9 +60,6 @@ ul.links{
     background-size: cover;
     /* parrallex image, Thank you W3!: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax */
   }
-  h1{
-      display: none;
-  }
   .Fall2019 .Winter2020{
     display: flex;
     flex-direction: column;
